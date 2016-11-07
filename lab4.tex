@@ -175,7 +175,7 @@
 
 % *** PDF, URL AND HYPERLINK PACKAGES ***
 %
-%\usepackage{url}
+\usepackage{url}
 % url.sty was written by Donald Arseneau. It provides better support for
 % handling and breaking URLs. url.sty is already installed on most LaTeX
 % systems. The latest version and documentation can be obtained at:
@@ -229,14 +229,28 @@ The Internet of Things is a concept that has exploded in popularity in recent ye
 \IEEEpeerreviewmaketitle
 
 \section{Introduction}
-Devices labeled under the rubric \textit{Internet of Things }are rapidly becoming widespread in common homes.\cite{mulani} The term was first used in 1999 by Kevin Ashton, British technology pioneer, to describe a system in which physical objects connect via sensors to the internet. 
+Devices labeled under the rubric \textit{Internet of Things} (henceforth IoT) are rapidly becoming widespread in common homes.\cite{mulani} The term was first used in 1999 by Kevin Ashton, British technology pioneer, to describe a system in which physical objects connect via sensors to the internet. While Ashton needed the term to illustrate the use of RFID tags to automate tracking goods in supply chains, the term has since come to be used for various scenarious where internet connectivity or computing capability can be used for various every day items. 
+
+\subsection{Examples of IoT devices}
+Examples of IoT devices vary greatly. Simple ones include screens on otherwise normally occuring objects in a household, e.g.\ refridgerators. The device that outputs on the display could provide the users with information retrieved from online data sources, and could be connected via WiFi. Devices could measure things like water and electricity consumption, possibly comparing this to online resources, and provide the users with advice.
+
+Of course devices not related to home automation exist as well. In retail, systems that track supplies are useful, and digital payment via RFID or NFC are becoming widespread. In contrast to \textit{smart homes} (home automation), \textit{smart cities} are on the rise as well with things like parking space tracking devices\cite{parking} and street light intensity regulation.  
+
+The popularity of the Raspberry Pi has introduced an accessible way for technology enthusiasts to tinker with IoT devices on their own, as the Raspberry Pi hardware is well suited for IoT at reasonable prices.\cite{raspberryiot} In their article \textit{Raspberry Pi as a Sensor Web node for home automation}, V. Vujović and M. Maksimović makes a case that the Raspberry Pi is an inexpensive device that can be utilised for a wide of home automation projects and research.\cite{raspberrysensor} Figure~\ref{fig:raspberry} illustrates numerous use cases of such.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=3.3in]{assets/raspberry.jpg}
+\caption{Integrated home automation system and its benefits}
+\label{fig:raspberry}
+\end{figure}
 
 \section{Background}
 
 \section{Discussion}
 
 \section{Conclusions}
-This is very important.
+Security is very important.
 
 %\begin{figure}[!t]
 %\centering
@@ -345,6 +359,7 @@ This is very important.
 %\begin{thebibliography}{1}
 
 %\begingroup
+%\RaggedRight
 \bibliographystyle{./bib/IEEEtran}
 \bibliography{./bib/lab4}
 %\endgroup
