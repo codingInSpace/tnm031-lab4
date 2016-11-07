@@ -342,26 +342,32 @@ This is very important.
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
+%\begin{thebibliography}{1}
+
+%\begingroup
+\bibliographystyle{./bib/IEEEtran}
+\bibliography{./bib/lab4}
+%\endgroup
+%\printbiography
 
 % example
 %\bibitem{gamma}
 %E. Gamma and R. Helm and R. Johnson and  J. Vlissides, \emph{Design Patterns: Elements of Reusable Object-Oriented Software}, \hskip 1em plus
 %  0.5em minus 0.4em\relax Addison-Wesley, 1995.
-
-\bibitem{mulani}
-T. Mulani and S. Pingle (2016). Internet of Things. International Research Journal of Multidisciplinary Studies, [online] 2(3), p. Available at: http://www.irjms.in/sites/irjms/index.php/files/article/view/270/256 [Accessed 7 Nov. 2016].
-
-\bibitem{windriver}
-Windriver.com. (2016). [online] Available at: http://www.windriver.com/whitepapers/security-in-the-internet-of-things/wr\_security-in-the-internet-of-things.pdf [Accessed 7 Nov. 2016].
-
-\bibitem{meola}
-Meola, A. (2016). How the Internet of Things will affect security \& privacy. [online] Business Insider. Available at: http://www.businessinsider.com/internet-of-things-security-privacy-2016-8?r=US\&IR=T\&IR=T [Accessed 7 Nov. 2016].
-
-\bibitem{raspberryiot}
-M. Maksimović and V. Vujović and N. Davidović and V. Milošević and B. Perišić (2014). Raspberry Pi as Internet of things hardware: performances and constraints. [online] design issues. Available at: https://www.researchgate.net/profile/Branko\_Perisic/publication/\newline272175660\_Raspberry\_Pi\_as\_Internet\_of\_Things\_hardware\_Performances\newline\_and\_Constraints/links/54de02e40cf23bf204397efe.pdf [Accessed 7 Nov. 2016].
-
-\end{thebibliography}
+%
+%\bibitem{mulani}
+%T. Mulani and S. Pingle (2016). Internet of Things. International Research Journal of Multidisciplinary Studies, [online] 2(3), p. Available at: http://www.irjms.in/sites/irjms/index.php/files/article/view/270/256 [Accessed 7 Nov. 2016].
+%
+%\bibitem{windriver}
+%Windriver.com. (2016). [online] Available at: http://www.windriver.com/whitepapers/security-in-the-internet-of-things/wr\_security-in-the-internet-of-things.pdf [Accessed 7 Nov. 2016].
+%
+%\bibitem{meola}
+%Meola, A. (2016). How the Internet of Things will affect security \& privacy. [online] Business Insider. Available at: http://www.businessinsider.com/internet-of-things-security-privacy-2016-8?r=US\&IR=T\&IR=T [Accessed 7 Nov. 2016].
+%
+%\bibitem{raspberryiot}
+%M. Maksimović and V. Vujović and N. Davidović and V. Milošević and B. Perišić (2014). Raspberry Pi as Internet of things hardware: performances and constraints. [online] design issues. Available at: https://www.researchgate.net/profile/Branko\_Perisic/publication/\newline272175660\_Raspberry\_Pi\_as\_Internet\_of\_Things\_hardware\_Performances\newline\_and\_Constraints/links/54de02e40cf23bf204397efe.pdf [Accessed 7 Nov. 2016].
+%
+%\end{thebibliography}
 % that's all folks
 \end{document}
 
