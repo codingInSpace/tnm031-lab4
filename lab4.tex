@@ -259,12 +259,19 @@ This paper will discuss security and privacy issues with IoT\@: What they are an
 This paper divides security concerns into three different categories: Malicious attacks, safety, and privacy. However, as threats to safety through cyber crime is often a result of breach of privacy, safety and privacy is discussed in combination. 
 
 \subsection{Attacks}
+\subsubsection{Probably The First IoT Botnet Incident}
+In 2014, researchers from Proofpoint uncovered what they believe might be the first IoT based attack, evolving more than 750,000 malicious email communications coming from more than 100,000 individual devices on a global scale.\cite{proofpoint} Specifically, about than 25 percent of the volume of the offending emails were not sent from conventional computers or mobile devices, but from devices such as routers, multi-media centers, smart TVs, and at least one seemingly innocent (to its owners) refrigerator. The attacks targeted many enterprises and individuals worldwide.
+
+Something that contributed to making the attack difficult to block was that with the large amount of devices, no more than 10 emails were needed to be sent from a single device, making the sources vastly spread and hard to identify.\cite{proofpoint} It is also reported that many devices did not require advanced methods of compromisation to get included in the attack, instead user misconfigurations and use of default passwords left many devices easily susceptible to botnet takeover. 
+
+Proofpoint conclude their report by stating that while IoT devices hold great promise to daily life, they also hold promise for criminal activity as they are easy to compromise. This being because vendors and users take few steps to make devices secure, and compromises are hard to detect.\cite{proofpoint} It should be noted however that the Proofpoint article is about two and a half years old at the time of writing this paper.
+
 \subsubsection{DynDNS incident}
 DDoS attacks are one of the most common ways to maliciously cause online services to go offline. On October 21, 2016 the major DNS provider DynDNS, which provides service for many high traffic sites and services such as Twitter, PayPal, GitHub, Netflix, Amazon and Spotify, experienced large amounts of DDoS attacks causing many of these sites to become inaccessible to millions of people worldwide for several hours.\cite{dynstatement} While the majority of internet users may have been outraged mainly by the downtime of the social media service Twitter, the result of this attack could have been critical for many businesses that rely on services like PayPal and Amazon.
 
-Flashpoint, a tech team that provides insights into cyber crime,\cite{flashpoint} published an analysis stating that a significant portion of the infrastructure causing the attack were botnet linked devices compromised by the malware Mirai.\cite{fpmirai} Mirai targets IoT devices such as routers, security cameras and DVRs, and connects compromised devices to botnets. Its source code has been leaked and is hosted publicly for academic purposes, which also means that virtually anyone can access it and potentially learn to use it to quickly pull connected devices into harming botnets.
+Flashpoint, a tech team that provides insights into cyber crime,\cite{flashpoint} published an analysis stating that a significant portion of the infrastructure causing the attack were botnet linked devices compromised by the malware Mirai.\cite{fpmirai} Mirai targets IoT devices like as routers, security cameras and DVRs, and connects compromised devices to botnets. Its source code has been leaked and is hosted publicly for academic purposes, which also means that virtually anyone can access it and potentially learn to use it to quickly pull connected devices into harming botnets.
 
-DynDNS released a public statement after the attack was mitigated confirming that the Mirai malware was one source of the attacks and that in total, tens of millions of IP addresses were involved in the offense.\cite{dynstatement}
+DynDNS released a public statement after the attack was mitigated, confirming that the Mirai malware was one source of the attacks and that in total, tens of millions of IP addresses were involved in the offense.\cite{dynstatement}
 
 \subsubsection{The Largest DDoS attack to Date Incident}
 
