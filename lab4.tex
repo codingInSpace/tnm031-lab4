@@ -1,4 +1,5 @@
 \documentclass[a4paper, conference]{IEEEtran/IEEEtran}
+\usepackage[utf8]{inputenc}
 % Some very useful LaTeX packages include:
 
 % *** MISC UTILITY PACKAGES ***
@@ -234,14 +235,18 @@ Devices labeled under the rubric \textit{Internet of Things} (henceforth IoT) ar
 \subsection{Examples of IoT devices}
 Examples of IoT devices vary greatly. Simple ones include screens on otherwise normally occuring objects in a household, e.g.\ refridgerators. The device that outputs on the display could provide the users with information retrieved from online data sources, and could be connected via WiFi. Devices could measure things like water and electricity consumption, possibly comparing this to online resources, and provide the users with advice.
 
-Of course devices not related to home automation exist as well. In retail, systems that track supplies are useful, and digital payment via RFID or NFC are becoming widespread. In contrast to \textit{smart homes} (home automation), \textit{smart cities} are on the rise as well with things like parking space tracking devices\cite{parking} and street light intensity regulation.  
+Devices not related to home automation exist as well. In retail, systems that track supplies are useful, and digital payment via RFID or NFC are becoming widespread. In contrast to \textit{smart homes} (home automation), \textit{smart cities} are on the rise as well with things like parking space tracking devices\cite{parking} and street light intensity regulation.  
 
 The popularity of the Raspberry Pi has introduced an accessible way for technology enthusiasts to tinker with IoT devices on their own, as the Raspberry Pi hardware is well suited for IoT at reasonable prices.\cite{raspberryiot} In their article \textit{Raspberry Pi as a Sensor Web node for home automation}, V. Vujović and M. Maksimović makes a case that the Raspberry Pi is an inexpensive device that can be utilised for a wide range of home automation projects and research.\cite{raspberrysensor} Figure~\ref{fig:raspberry} illustrates numerous use cases of such.
 
 Some of these devices can be considered to be hobby gadgets that are mainly technologically impressive but do not add much necessary value to everyday life, while some can come to potentially transform the world. While many automated home devices may be unnecessary, things like smart lighting regulation could come to make a significant difference for the enviromnent in the future.\cite{meola}
 
-\section{Risk of Things}
-Cool gadgets and day to day life changing features aside, a vast expansion of small computers connected to the internet provides more targets for cyber crime. If hackers gain access to large numbers of devices, they can be rigged to simultaneously send large amounts of requests to services with the intent of causing traffic overload, commonly reffered to as Distributed Denial of Service (DDoS) attacks.\cite{ddos}
+\subsection{Risk of Things}
+Cool gadgets and day to day life changing features aside, a vast expansion of small computers connected to the internet provides more targets for cyber crime. If hackers gain access to large numbers of devices, they can be rigged to simultaneously send large amounts of requests to services with the intent of causing traffic overload, commonly reffered to as Distributed Denial of Service (DDoS) attacks.\cite{ddos} Security breaches may also pose direct threats to human lives, in case of interference with devices related to, say cars or pacemakers.\cite{windriver}
+
+There is also the issue of privacy protection.
+
+This paper will discuss security and privacy issues with IoT\@: What they are and entail, measures that can be taken against them, and how much is being done about them today.
 
 \begin{figure}[!t]
 \centering
@@ -251,6 +256,22 @@ Cool gadgets and day to day life changing features aside, a vast expansion of sm
 \end{figure}
 
 \section{Background}
+This paper divides security concerns into three different categories: Malicious attacks, safety, and privacy. However, as threats to safety through cyber crime is often a result of breach of privacy, safety and privacy is discussed in combination. 
+
+\subsection{Attacks}
+\subsubsection{DynDNS incident}
+DDoS attacks are one of the most common ways to maliciously cause online services to go offline. On October 21, 2016 the major DNS provider DynDNS, which provides service for many high traffic sites and services such as Twitter, PayPal, GitHub, Netflix, Amazon and Spotify, experienced large amounts of DDoS attacks causing many of these sites to become inaccessible to millions of people worldwide for several hours.\cite{dynstatement} While the majority of internet users may have been outraged mainly by the downtime of the social media service Twitter, the result of this attack could have been critical for many businesses that rely on services like PayPal and Amazon.
+
+Flashpoint, a tech team that provides insights into cyber crime,\cite{flashpoint} published an analysis stating that a significant portion of the infrastructure causing the attack were botnet linked devices compromised by the malware Mirai.\cite{fpmirai} Mirai targets IoT devices such as routers, security cameras and DVRs, and connects compromised devices to botnets. Its source code has been leaked and is hosted publicly for academic purposes, which also means that virtually anyone can access it and potentially learn to use it to quickly pull connected devices into harming botnets.
+
+DynDNS released a public statement after the attack was mitigated confirming that the Mirai malware was one source of the attacks and that in total, tens of millions of IP addresses were involved in the offense.\cite{dynstatement}
+
+\subsubsection{The Largest DDoS attack to Date Incident}
+
+\subsection{Privacy and Security}
+Home automation devices produce enormous amounts of private data that provide possible targets for criminals. A hacker that connects to these devices could essentially virtually invade a person's home. When using commercially manufactured IoT devices there is also the issue of agreeing to various terms of service, something that many may not do carefully, and may unwillingly have private details shared or published. An example could be manufactured IoT devices for cars, if the user is not careful there could potentially be an implementation of location tracking in the device, sending said user's drive routes to a company.\cite{meola}
+
+\section{Security and Safety Measures}
 
 \section{Discussion}
 
