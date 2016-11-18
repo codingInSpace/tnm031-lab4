@@ -1,4 +1,4 @@
-# Security of Internet of Things
+# Security Concerns Regarding Internet of Things
 Report made as a laboratory project in the course TNM031 at Linkoping University
 
 #### Compiling
