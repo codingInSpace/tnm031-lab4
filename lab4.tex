@@ -219,6 +219,11 @@ Email: jonathan.grangien@gmail.com}}
 The Internet of Things is a concept that has exploded in popularity in recent years, and is becoming increasingly so. By the year 2020 there will exist an estimated 24 billion of these devices.\cite{meola} How concerned about security issues should we be in this reality? Recent events suggest that many important precautions are yet to be made.
 \end{abstract}
 
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Internet of Things, security, privacy, DDoS.
+\end{IEEEkeywords}
+
 % For peer review papers, you can put extra information on the cover
 % page as needed:
 % \ifCLASSOPTIONpeerreview
@@ -266,17 +271,18 @@ Something that contributed to making the attack difficult to block was that with
 
 Proofpoint conclude their report by stating that while IoT devices hold great promise to daily life, they also hold promise for criminal activity as they are easy to compromise. This being because vendors and users take few steps to make devices secure, and compromises are hard to detect.\cite{proofpoint} It should be noted however that the Proofpoint article is about two and a half years old at the time of writing this paper.
 
-\subsubsection{DynDNS incident}
+\subsubsection{DynDNS Incident}
 DDoS attacks are one of the most common ways to maliciously cause online services to go offline. On October 21, 2016 the major DNS provider DynDNS, which provides service for many high traffic sites and services such as Twitter, PayPal, GitHub, Netflix, Amazon and Spotify, experienced large amounts of DDoS attacks causing many of these sites to become inaccessible to millions of people worldwide for several hours.\cite{dynstatement} While the majority of internet users may have been outraged mainly by the downtime of the social media service Twitter, the result of this attack could have been critical for many businesses that rely on services like PayPal and Amazon.
 
 Flashpoint, a tech team that provides insights into cyber crime,\cite{flashpoint} published an analysis stating that a significant portion of the infrastructure causing the attack were botnet linked devices compromised by the malware Mirai.\cite{fpmirai} Mirai targets IoT devices like as routers, security cameras and DVRs, and connects compromised devices to botnets. Its source code has been leaked and is hosted publicly for academic purposes, which also means that virtually anyone can access it and potentially learn to use it to quickly pull connected devices into harming botnets.
 
 DynDNS released a public statement after the attack was mitigated, confirming that the Mirai malware was one source of the attacks and that in total, tens of millions of IP addresses were involved in the offense.\cite{dynstatement}
 
-\subsubsection{The Largest DDoS attack to Date Incident}
+\subsubsection{The Largest DDoS Attack Known to Date}
+In September, 2016 the hosting company OVH was subject to what is believed to be the largest DDoS attack to date, with traffic of over one Terabyte per second at its highest.\cite{scmagazine} The founder of OVH stated that the attack was conducted by a botnet of 145,607 CCTV cameras and DVRs, each IP address source responsible for traffic ranging from 1 to 30 megabyte per second.
 
 \subsection{Privacy and Security}
-Home automation devices produce enormous amounts of private data that provide possible targets for criminals. A hacker that connects to these devices could essentially virtually invade a person's home. When using commercially manufactured IoT devices there is also the issue of agreeing to various terms of service, something that many may not do carefully, and may unwillingly have private details shared or published. An example could be manufactured IoT devices for cars, if the user is not careful there could potentially be an implementation of location tracking in the device, sending said user's drive routes to a company.\cite{meola}
+Home automation devices produce enormous amounts of private data that provide possible targets for criminals. Maliciously compromising such devices could not only have them used in attacks, but could also be used to virtually invade someone's home. When using commercially manufactured IoT devices there is also the issue of agreeing to various terms of service, something that many may not do carefully, and may unwillingly have private details shared or published. An example could be manufactured IoT devices for cars, if the user is not careful there could potentially be an implementation of location tracking in the device, sending said user's drive routes to a company.\cite{meola}
 
 \section{Security and Safety Measures}
 
