@@ -19,7 +19,7 @@ pdflatex lab4.tex
 
 *latex* may be used instead of *pdflatex*
 
-###### Add yourself as an author
+##### Add yourself as an author
 ```latex
 \author{\IEEEauthorblockN{Homer Simpson}
 \IEEEauthorblockA{Unnamed job in nuclear power plant\\
