@@ -1,5 +1,5 @@
 # Security Concerns Regarding Internet of Things
-Report made as a laboratory project in the course TNM031 at Linkoping University
+Paper made as a laboratory project in the course TNM031 at Linkoping University
 
 ### Expanding upon the report
 Use LaTeX for your OS. I use texlive-bin and texlive-core packages for Arch Linux
