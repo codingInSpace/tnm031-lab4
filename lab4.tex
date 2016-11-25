@@ -208,7 +208,7 @@
 \author{\IEEEauthorblockN{Jonathan Grangien}
 \IEEEauthorblockA{M.Sc. Computer Science in Media Technology\\
 Linköping University\\
-Email: jonathan.grangien@gmail.com}}
+jonathan.grangien@gmail.com}}
 
 % make the title area
 \maketitle
@@ -216,7 +216,7 @@ Email: jonathan.grangien@gmail.com}}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-The Internet of Things is a concept that has exploded in popularity in recent years, and is becoming increasingly so. By the year 2020 there will exist an estimated 24 billion of these devices.\cite{meola} How concerned about security issues should we be in this reality? Recent events suggest that many important precautions are yet to be made.
+The Internet of Things is a concept that has exploded in popularity in recent years, and it is becoming increasingly so. By the year 2020 there will exist an estimated 24 billion of these devices.\cite{meola} Despite many kinds of beneficient functionality and features these devices can provide, there is a huge issue with security in the ecosystem they have made up, and many important security measures are yet to be taken. This paper details dire consequences of the current lack of security and contains suggestions for how to prevent them.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -235,7 +235,7 @@ Internet of Things, security, privacy, DDoS.
 \IEEEpeerreviewmaketitle
 
 \section{Introduction}
-Devices labeled under the rubric \textit{Internet of Things} (henceforth IoT) are rapidly becoming widespread in common homes.\cite{mulani} The term was first used in 1999 by Kevin Ashton, British technology pioneer, to describe a system in which physical objects connect via sensors to the internet. While Ashton needed the term to illustrate the use of RFID tags to automate tracking goods in supply chains, the term has since come to be used for various scenarious where internet connectivity or computing capability can be used for various every day items. 
+Devices labeled under the term \textit{Internet of Things} (henceforth IoT) are rapidly becoming widespread in common homes and cities.\cite{mulani} The term was first used in 1999 by Kevin Ashton, British technology pioneer, to describe a system in which physical objects connect via sensors to the internet. While Ashton needed the term to illustrate the use of RFID tags to automate tracking goods in supply chains, the term has since come to be used for various scenarious where internet connectivity or computing capability can be used for various every day items. 
 
 \subsection{Examples of IoT devices}
 Examples of IoT devices vary greatly. Simple ones include screens on otherwise normally occuring objects in a household, e.g.\ refridgerators. The device that outputs on the display could provide the users with information retrieved from online data sources, and could be connected via WiFi. Devices could measure things like water and electricity consumption, possibly comparing this to online resources, and provide the users with advice.
@@ -249,9 +249,8 @@ Some of these devices can be considered to be hobby gadgets that are mainly tech
 \subsection{Risk of Things}
 Cool gadgets and day to day life changing features aside, a vast expansion of small computers connected to the internet provides more targets for cyber crime. If hackers gain access to large numbers of devices, they can be rigged to simultaneously send large amounts of requests to services with the intent of causing traffic overload, commonly reffered to as Distributed Denial of Service (DDoS) attacks.\cite{ddos} Security breaches may also pose direct threats to human lives, in case of interference with devices related to, say cars or pacemakers.\cite{windriver}
 
-There is also the issue of privacy protection.
-
-This paper will discuss security and privacy issues with IoT\@: What they are and entail, measures that can be taken against them, and how much is being done about them today.
+%There is also the issue of privacy protection etc etc
+This paper will discuss security and privacy issues with IoT and consequences thereof. Measures that can be taken against them are discussed, and how much is being done about security today.
 
 \begin{figure}[!t]
 \centering
@@ -261,7 +260,7 @@ This paper will discuss security and privacy issues with IoT\@: What they are an
 \end{figure}
 
 \section{Background}
-This paper divides security concerns into three different categories: Malicious attacks, safety, and privacy. However, as threats to safety through cyber crime is often a result of breach of privacy, safety and privacy is discussed in combination. 
+This paper treats security concerns as divided into three categories: Malicious attacks, safety, and privacy. However, as threats to safety through cyber crime is often a result of breach of privacy, safety and privacy is discussed in combination. 
 
 \subsection{Attacks}
 \label{sec:attacks}
@@ -284,7 +283,8 @@ DynDNS released a public statement after the attack was mitigated, confirming th
 \subsubsection{The Largest DDoS Attack Known to Date}
 In September, 2016 the hosting company OVH was subject to what is believed to be the largest DDoS attack to date, with traffic of over one terabyte per second at its highest.\cite{scmagazine} The founder of OVH stated that the attack was conducted by a botnet of 145,607 CCTV cameras and DVRs, each IP address source responsible for traffic mostly ranging from 1 to 30 megabyte per second.
 
-\subsection{Privacy and Security}
+\subsection{Privacy and Safety}
+\label{sec:privacy}
 Home automation devices produce enormous amounts of private data that provide possible targets for criminals. Maliciously compromising such devices could not only have them used in attacks, but could also be used to virtually invade someone's home. When using commercially manufactured IoT devices there is also the issue of agreeing to various terms of service, something that many may not do carefully, and may unwillingly have private details shared or published. An example could be manufactured IoT devices for cars, if the user is not careful there could potentially be an implementation of location tracking in the device, sending said user's drive routes to a company.\cite{meola}
 
 \section{Discussion}
@@ -297,11 +297,13 @@ A good solution for the factory default username/password problem would be if th
 
 % estimate risk of sharing privacy data
 %http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6849186
+As mentioned in~\ref{sec:privacy}, many IoT devices collect private data. In their paper \textit{IoT-Privacy: To Be Private or Not To Be Private}, A. Ukil et al propose a scheme for owners of IoT systems in general that measure smart meter-like data to quantifiably assess the privacy risk of sharing it.\cite{tobeprivate} Methods like this could, if made accessible, be provided to end users to decide if a device collecting private data should be connected to the internet.
 
-\subsection{Security Guidance}
+\subsection{Guidelines of the U.S. Department of Homeland Security}
+In Nov. 2016, the U.S. Department of Homeland Security (DHS) addressed IoT security~\cite{dhssite} and published a set of guidelines titled \textit{STRATEGIC PRINCIPLES FOR SECURING THE INTERNET OF THINGS (IoT)}.\cite{dhsdoc} The document suggests that securing the IoT ecosystem is critical, and that the government and the industry should work together to accomplish this. The document promotes what is called strategic principles for securing IoT, which address the factory default credentials problem, that IoT devices should use recent and modern operating systems, that the hardware itself should incorporate security features, and better system fail safety. Software updates and ways to secure devices over network is promoted, and it is suggested that hardware makers should build upon recognized security practices and promote transparency.
 
-\section{Conclusions}
-Security is very important.
+\section{Conclusion}
+Security in IoT is not keeping up with the pace of innovation. An ecosystem of devices that are currently very vulnerable to attacks on their owners' privacy and from botnet creating malware that intend to take down corporate services is wide spread, and keeps expanding, and security needs to be improved. End users of IoT devices have some options to improve security in those that they own, but fact is that hardware makers need to implement security measures such as the ones discussed in this paper, and until they do so a large problem in IT is left unresolved. 
 
 %\begin{figure}[!t]
 %\centering

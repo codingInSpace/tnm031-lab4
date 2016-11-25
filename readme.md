@@ -23,8 +23,8 @@ pdflatex lab4.tex
 #### Add yourself as an author
 ```latex
 \author{\IEEEauthorblockN{Homer Simpson}
-\IEEEauthorblockA{Unnamed job in nuclear power plant\\
+\IEEEauthorblockA{Nuclear power plant worker\\
 Springfields power plant\\
-Email: praisejebus@aol.com}}
+praisejebus@aol.com}}
 ```
 
